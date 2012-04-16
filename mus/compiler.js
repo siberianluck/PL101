@@ -24,7 +24,7 @@ var compileT = function (expr, t){
         return [].concat(compileT(expr.left, t), compileT(expr.right, t));
     }
     if(expr.tag == 'rest'){
-        return { tag: 'note', start: t, dur: expr.duration };
+        return [];
     }
 };
 
